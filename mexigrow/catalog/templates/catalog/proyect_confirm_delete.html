@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Eleminar proyecto</h1>
+
+<p>Seguro quieres eliminar a este proyecto: {{ proyect }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" action="" value="Sí" />
+</form>
+
+{% endblock %}

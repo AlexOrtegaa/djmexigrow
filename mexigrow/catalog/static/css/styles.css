@@ -1,0 +1,310 @@
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: "#f2f2f2";
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #000000;
+    color: black;
+}
+.topnav a.split {
+    float: right;
+    background-color: #e73430;
+    color: white;
+}
+
+.topnav a:visited { 
+text-decoration: none; 
+color: white; 
+}
+
+.pro-li { 
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proyect { 
+    margin: 70px 200px;
+}
+
+.proyect a { 
+    padding: 0px 30px;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proyect a:visited {
+    text-decoration: none; 
+    color: black; 
+    }
+
+.proyect a:hover {
+    
+    color: black;
+}
+
+.proyect h4 { 
+    margin: 10px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ind { 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    }
+
+.ind_left { 
+    font-size: 25px;
+    flex: 6;
+    text-align: center;
+    
+    height: 100%;
+    
+}
+.ind_left_cnt { 
+    
+    flex: 1;
+    
+    
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 30%;
+    
+}
+.ind_right { 
+    
+    flex: 4;
+    height: 100%;
+    
+    
+}
+.ind_right_cnt { 
+     
+    flex: 1;
+    margin-right: 20%;
+    margin-left: 10%;
+    margin-top: 15%;
+    
+    
+}
+.ind_right hr { 
+    border-top: 0.2px solid gray;
+    margin-right: 10%;
+}
+
+
+
+.ind_right h2 { 
+    text-align: left;
+    margin: 3%;
+    font-size: 30px;
+}
+.ind_right li { 
+    text-align: left;
+    list-style-type: square;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.ind_right h3 { 
+    margin: 3%;
+    font-size: 25px;
+}
+.ind_right h4 { 
+    margin: 3%;
+    font-weight: 200;
+    font-size: 17px;
+}
+.ind_right .li_1{ 
+    margin-top: 3%;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.form_login { 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.data { 
+    float: right;
+}
+.img { 
+    float: left;
+}
+
+.mi { 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.mi_left { 
+    flex: 7;
+    text-align: left;
+    height: 100%;
+    
+    
+}
+.mi_left_cnt { 
+    flex: 1;
+    margin-right: 10%;
+    margin-left: 20%;
+    margin-top: 8%;
+    
+    
+}
+.mi_right { 
+    
+    flex: 6;
+    height: 100%;
+    
+    
+}
+.mi_right_cnt { 
+    flex: 1;
+    margin-right: 30%;
+    margin-left: 10%;
+    margin-top: 14%;
+    
+    
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+
+.mi_right_cnt li { 
+    list-style-type: none;
+    
+    
+}
+
+.mi_left_cnt h1 { 
+    
+    font-weight: bold;
+    font-size: 30px;
+    margin: 1%;
+}
+
+.mi_left_cnt h2 { 
+    
+    font-weight: normal;
+    font-size: 25px;
+    margin: 1.5%;
+}
+.mi_left_cnt li { 
+    list-style-type: square;
+    margin-top: 5%;
+    
+}
+
+.mi_left_cnt h3 { 
+    
+    font-weight: normal;
+    font-size: 22px;
+    margin: 1%;
+    
+}
+.mi_right_cnt h2 { 
+    
+    font-weight: bold;
+    font-size: 28px;
+    margin: 1%;
+    
+}
+
+.documents h3 { 
+    
+    font-weight: normal;
+    font-size: 22px;
+    margin: 1%;
+    
+}
+
+.messages h3 { 
+    
+    font-weight: normal;
+    font-size: 22px;
+    margin: 1%;
+    
+}
+.messages { 
+    margin-bottom: 15%;
+    
+}
+.messages h4 { 
+    
+    font-weight: normal;
+    font-size: 17px;
+    margin: 1%;
+    font-style: italic;
+    
+}
+.messages li { 
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.documents li { 
+    
+    list-style-type: square;
+    
+}
+
+
+.documents_cnt { 
+    
+    margin-left: 4%;
+    
+}
+.gradient-custom {
+/* fallback for old browsers */
+background: #6a11cb;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}

@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <div >
+
+  <h1 class="pro-li">Proyectos disponibles actualmente</h1>
+  {% if proyect_list %}
+      {% for proyect in proyect_list %}
+      <div class="proyect">
+        <a href="{{ proyect.get_absolute_url }}">{{ proyect.title }} </a>
+        <h4>({{proyect.company}})</h4>
+        <h4>{{ proyect.mini_summary }}</h3>
+      </div>
+      {% endfor %}
+
+
+      
+      
+  {% else %}
+    <p>No hay proyectos de momento. Vuelve más tarde.</p>
+  {% endif %}
+  </div>
+{% endblock %}

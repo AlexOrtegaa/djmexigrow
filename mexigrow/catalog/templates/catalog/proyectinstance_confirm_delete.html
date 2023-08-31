@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Eleminar proyecto</h1>
+
+<p>Seguro quieres eliminar esta inversión: {{ proyectinstance }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" action="" value="Sí" />
+</form>
+
+{% endblock %}

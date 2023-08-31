@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h4>Información de la puja</h4>
+<form method="POST" action="{% url 'bid' %}">
+    {% csrf_token %}
+    <input type="text" name="proyect" placeholder="Nombre del proyecto">
+    <input type="text" name="name" placeholder="Nombre del usuario">
+    <input type="email" name="email" placeholder="email">
+    <input type="text" name="date_acq" placeholder="Día de adquisición">
+    <input type="text" name="end_cont" placeholder="Fecha de fin de contrato">
+    <input type="text" name="amount" placeholder="Monto">
+    <button class="btn btn-primary mt-2" type="submit">Enviar puja</button>
+
+</form>
+
+{% endblock %}

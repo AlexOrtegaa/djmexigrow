@@ -1,0 +1,70 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <div class="mi">
+    <div class="mi_left">
+      <div class="mi_left_cnt">
+    <h1>Mis inversiones</h1>
+
+    {% if proyectinstance_list %}
+    <ul>
+
+      {% for proyectinst in proyectinstance_list %}
+      <li class="{% if proyectinst.proyect_participation_ended %}text-danger{% endif %}">
+        <h2><a href="{% url 'my-investment' proyectinst.id %}">{{proyectinst.proyect.title}}</a></h2> 
+        <h3>Inversión: {{ proyectinst.investment }}</h3>
+        <h3>Fecha de unión al proyecto: {{ proyectinst.date_acquired }}</h3>
+        <h3>Fecha de termino de unión al proyecto: {{ proyectinst.date_of_end_contract }}</h3>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% else %}
+      <p>No tienes inversiones de momento.</p>
+    {% endif %}
+    </div>
+    </div>
+    <div class="mi_right">
+      <div class="mi_right_cnt">
+      <div class="messages">
+        <h2>Mensajes</h2>
+        <ul>
+          <li class="li_1">
+            <h3>Actualiza tu perfil</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, enim porttitor nisi ultricies egestas magna litora faucibus aliquet.</h4>
+          </li>
+          <hr>
+          <li>
+            <h3>Proximo fin de mes</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, enim porttitor nisi ultricies egestas magna litora faucibus aliquet.</h4>
+          </li>
+          <hr>
+          <li>
+            <h3>Crea una nueva inversión y aprovecha</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, enim porttitor nisi ultricies egestas magna litora faucibus aliquet.</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="documents">
+        <h2>Mis documentos</h2>
+        <div class="documents_cnt">
+        <ul>
+          <li class="li_1">
+            <h3>Acta de nacimiento</h3>
+          </li>
+          
+          <li>
+            <h3>Facturas 2023-2024</h3>
+          </li>
+          
+          <li>
+            <h3>Acta de nacimiento</h3>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+{% endblock %}

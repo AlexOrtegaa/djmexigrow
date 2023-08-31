@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<form action="{% url 'contact' %}" method="post">
+    {% csrf_token %}
+    <span>Contacto</span>
+    <div>
+        <input type="text" name="name" placeholder="nombre">
+    </div>
+    <div>
+        <input type="text" name="email" placeholder="nombre">
+    </div>
+    <div>
+        <input type="text" name="subject" placeholder="nombre">
+    </div>
+    <div>
+        <input type="text" name="message" placeholder="nombre">
+    </div>
+
+</form>
+{% endblock %}
